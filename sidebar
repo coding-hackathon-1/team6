@@ -8,6 +8,27 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+
+a:link {
+  color: none;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
 .sidenav {
   height: 100%;
   width: 0;
@@ -53,12 +74,29 @@ body {
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#">Skills Card</a>
-  <a href="#">Alumni</a>
+  <a href="https://www.hult.edu/en/alumni/">Alumni</a>
   <a href="#">Top Skills</a>
-  <a href="#">Linked In</a>
+  <a href="https://www.linkedin.com/">Linked In</a>
 </div>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; My Courses</span>
+<h1>
+  <span style="word-spacing: 5px; font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span> 
+  <a class="nav-item nav-link" href="{% url 'blog-home' %}">My Courses</a >
+  <a class="nav-item nav-link" href="{% url 'blog-about' %}" style="word-spacing: 30px"> About </a >
+</h1> 
+
+       
+          
+         
+            
+              
+              
+            
+            
+            
+         
+        
+
 
 <script>
 function openNav() {
