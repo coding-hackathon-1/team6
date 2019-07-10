@@ -24,7 +24,7 @@ def about(request):
 # def about(request):
 # 	return HttpResponse('<h1> Blog About </h1>', {'title': 'About'}) #HTML code to create a header 
 def information(request):
-	return render(request, 'blog/request.html')
+	return render(request, 'blog/information.html')
 
 def author(request):
 	return render(request,'blog/author.html')
