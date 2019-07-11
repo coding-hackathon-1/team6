@@ -28,3 +28,6 @@ def information(request):
 
 def author(request):
 	return render(request,'blog/author.html')
+
+def skills(request):
+	return render(request, 'blog/skills.html')
