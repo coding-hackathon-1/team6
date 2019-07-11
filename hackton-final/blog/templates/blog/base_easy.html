@@ -81,6 +81,7 @@ a:active {
   <a class="nav-item nav-link" href="{% url 'blog-skills' %}">Top Skills</a>
   <a href="https://www.hult.edu/en/alumni/">Alumni</a>
   <a href="https://www.linkedin.com/">LinkedIn</a>
+ 
 </div>
 
 <!-- panel screen-->
@@ -89,7 +90,7 @@ a:active {
   <h1>
     <span class="w3-bar-item w3-button" style="word-spacing: 5px; font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span> 
     
-    <a class="w3-bar-item w3-button" href="https://mycourses.hult.edu/">MyCourses</a >
+    <a class="w3-bar-item w3-button" href="{% url 'blog-home' %}">Ashas</a >
     <a class="w3-bar-item w3-button" href="{% url 'blog-about' %}" style="word-spacing: 30px"> Connection </a >
 
   </h1> 
